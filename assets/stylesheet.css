@@ -1,0 +1,11 @@
+.cards{
+    background-color: violet;
+    width: 30vw;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+#dicionario{
+    display: flex;
+}
