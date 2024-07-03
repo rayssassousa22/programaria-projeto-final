@@ -1,5 +1,5 @@
 .cards{
-    background-color: violet;
+    border: 1px solid black;
     width: 30vw;
     padding: 1rem;
     border-radius: 10px;
@@ -8,4 +8,10 @@
 
 #dicionario{
     display: flex;
+}
+
+blockquote{
+    background-color: rgba(209, 205, 205, 0.5);
+    border-radius: 10px;
+    padding: 5px;
 }
