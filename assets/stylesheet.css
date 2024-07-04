@@ -1,18 +1,57 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    height: 100px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+header h1, h2{
+    margin-bottom: 0;
+}
+
+#dicionario{
+    max-width: 1024px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
 }
 
 .cards{
-    border: 1px solid rgba(144, 14, 196, 0.5);
-    width: 30vw;
-    padding: 1rem;
-    border-radius: 10px;
+    display: inline-block;
     margin: 10px;
-    text-align: center;
+    border: 1px solid #000;
+    vertical-align: top;
+    max-height: 100%;
 }
 
-.cards p, .cards blockquote{
-    text-align: start;
+.cards p{
+    padding: 0 10px;
+}
+
+.cards blockquote{
+    color: #777;
+    font-style: italic;
+}
+
+.cards img{
+    display: block;
+    width: 300px;
+    height: 300px;
+}
+
+.cards details{
+    width: 300px;
+    height: auto;
+    display: inline-block;
+}
+
+.cards summary{
+    font-size: 18px;
+    padding: 10px;
 }
 
 .cards:hover{
@@ -24,9 +63,7 @@ body{
 }
 
 blockquote{
-    background-color: rgba(144, 14, 196, 0.5);
     border-radius: 10px;
     padding: 1rem;
     color: white;
-    text-shadow: 5px 0 5px rgba(0, 0, 0, 0.5);
 }
