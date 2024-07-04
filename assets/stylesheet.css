@@ -28,11 +28,11 @@ main #dicionario{
     max-height: 100%;
 }
 
-.cards p{
+.cards details p{
     padding: 0 10px;
 }
 
-.cards blockquote{
+.cards details blockquote{
     color: #777;
     font-style: italic;
 }
@@ -49,7 +49,7 @@ main #dicionario{
     display: inline-block;
 }
 
-.cards summary{
+.cards details summary{
     font-size: 18px;
     padding: 10px;
 }
@@ -66,4 +66,58 @@ blockquote{
     border-radius: 10px;
     padding: 1rem;
     color: white;
+}
+
+/* Vamos ver agora alguns breakpoints comuns em termos de larguras dos dispositivos:
+
+320px — 480px: dispositivos móveis
+481px — 768px: iPads, tablets
+769px — 1024px: telas pequenas, laptops
+1025px — 1200px: desktops, telas grandes
+1201px e acima —  telas muito grandes, TVs*/
+
+@media (max-width: 768px){
+    header{
+        padding-bottom: 20px;
+        height: 200px;
+    }
+}
+
+@media (max-width:768px){
+    header h1, h2{
+        font-size: 26px;
+    }
+}
+
+@media (max-width:768px){
+    .cards{
+        display: block;
+        margin: 20px 10px;
+    }
+}
+
+@media (max-width:768px){
+    .cards img{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media(max-width:768px){
+    .cards details{
+        width: 100%;
+    }
+}
+
+@media (max-width:768px){
+    .cards details summary{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:768px){
+    
+    .cards deatils p{
+        font-size: 14px;
+    }
 }
