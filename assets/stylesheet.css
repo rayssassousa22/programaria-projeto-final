@@ -4,8 +4,8 @@ body{
 
 header{
     height: 100px;
-    border-bottom: 1px solid #000;
-    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid black;
 }
 
 header h1, h2{
@@ -17,7 +17,6 @@ main #dicionario{
     display: block;
     max-width: 1024px;
     width: 100%;
-    display: block;
     margin: 0 auto;
 }
 
