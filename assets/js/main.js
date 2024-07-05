@@ -1,6 +1,4 @@
-function carregaDicionario(){
-    var biografias = "este texto é uma minibio";
-    alert(biografias + " - alerta geral");
-}
+var nome;
+nome = prompt("Qual seu nome? ")
 
-carregaDicionario();
+alert("Olá, " + nome + "!");
