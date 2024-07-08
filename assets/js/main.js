@@ -4,7 +4,9 @@ function carregaDicionario() {
         "Marielle Franco", 
         " Rosa Parks", 
         " Angela Davis", 
-        " Carolina de Jesus"
+        " Carolina de Jesus",
+        " Conceição Evaristo",
+        " Lélia Gonzalez"
     ];
   
     alert(biografias);
