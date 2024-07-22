@@ -20,7 +20,9 @@ function carregaDicionario() {
             citacao: "Você nunca deve ter medo do que está fazendo quando está certo.", imagem:"https://i.postimg.cc/K1q2Zw74/rosa-parks.png"}
 };
   
-    console.log(biografias);
+    for(var bio in biografias){
+        console.log((bio += " " + "Nome: " + biografias[bio].nome));
+    }
   
 }
   
