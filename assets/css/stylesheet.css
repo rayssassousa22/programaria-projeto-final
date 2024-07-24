@@ -1,72 +1,58 @@
-body{
-    font-family: 'Open Sans', sans-serif;
-}
-
-header{
+body {
+    font-family: Open Sans, sans-serif;
+  }
+  
+  header {
     height: 100px;
-    padding-bottom: 40px;
-    border-bottom: 1px solid black;
-}
-
-header h1, h2{
+    border-bottom: 1px solid #000;
+    margin-bottom: 40px;
+  }
+  
+  h1 {
     text-transform: uppercase;
     margin-bottom: 0;
-}
-
-main #dicionario{
+  }
+  
+  section {
+    margin: 0 auto;
     display: block;
     max-width: 1024px;
     width: 100%;
-    margin: 0 auto;
-}
-
-.cards{
+  }
+  
+  .card {
     display: inline-block;
     margin: 10px;
     border: 1px solid #000;
     vertical-align: top;
     max-height: 100%;
-}
-
-.cards details p{
-    padding: 0 10px;
-}
-
-.cards details blockquote{
-    color: #777;
-    font-style: italic;
-}
-
-.cards img{
+  }
+  
+  .card img {
     display: block;
     width: 300px;
     height: 300px;
-}
-
-.cards details{
+  }
+  
+  .card details {
     width: 300px;
     height: auto;
     display: inline-block;
-}
-
-.cards details summary{
+  }
+  
+  .card details summary {
     font-size: 18px;
     padding: 10px;
-}
-
-.cards:hover{
-    background-color: plum;
-}
-
-#dicionario{
-    display: flex;
-}
-
-blockquote{
-    border-radius: 10px;
-    padding: 1rem;
-    color: white;
-}
+  }
+  
+  .card details p {
+    padding: 0 10px;
+  }
+  
+  .card details blockquote {
+    color: #777;
+    font-style: italic;
+  }
 
 /* Vamos ver agora alguns breakpoints comuns em termos de larguras dos dispositivos:
 

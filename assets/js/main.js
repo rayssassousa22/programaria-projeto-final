@@ -22,7 +22,7 @@ function carregaDicionario() {
     var content = document.getElementById("dicionario");
   
     for(var bio in biografias){
-        content.innerHTML += '<div class="card">' + '<img src="' + biografias[bio].imagem + '" alt="Foto de Marielle Franco">' + '<details>' + '<summary>' + biografias[bio].nome + '</summary>' + '<p>' + biografias[bio].descricao + '</p>' + '<blockquote>' + biografias[bio].descricao + '</blockquote>'  + '</details>' + '</div>';     
+        content.innerHTML += '<div class="cards">' + '<img src="' + biografias[bio].imagem + '" alt="Foto de Marielle Franco">' + '<details>' + '<summary>' + biografias[bio].nome + '</summary>' + '<p>' + biografias[bio].descricao + '</p>' + '<blockquote>' + biografias[bio].descricao + '</blockquote>'  + '</details>' + '</div>';     
         console.log((bio += " " + "Nome: " + biografias[bio].nome + "   " + "Minibio: " + biografias[bio].descricao + "     " + "Citação: " + biografias[bio].citacao));
     }
   
