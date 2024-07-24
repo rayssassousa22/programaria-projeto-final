@@ -2,7 +2,7 @@ function carregaDicionario() {
 
     var biografias = { 
         "bio01": {nome: "Angela Davis", descricao: "Angela Yvonne Davis é uma professora e filósofa socialista estado-unidense que alcançou notoriedade mundial na década de 1970 como integrante do Partido Comunista dos Estados Unidos, dos Panteras Negras, por sua militância pelos direitos das mulheres e contra a discriminação social e racial nos Estados Unidos e por ser personagem de um dos mais polêmicos e famosos julgamentos criminais da recente história dos Estados Unidos.", 
-            citacao: "Não aceito mais as coisas que não posso mudar, estou mudando as coisas que não posso aceitar.", 
+            citacao: '"Não aceito mais as coisas que não posso mudar, estou mudando as coisas que não posso aceitar."', 
             imagem: "https://i.postimg.cc/LJ6SF21r/angela-davis.png"},
         "bio02": {nome: "Carolina de Jesus", descricao: "Carolina Maria de Jesus foi uma escritora brasileira, conhecida por seu livro Quarto de Despejo: Diário de uma Favelada publicado em 1960. Considerada uma das primeiras e mais importantes escritoras negras do Brasil. A autora viveu boa parte de sua vida na favela do Canindé, na zona norte de São Paulo, sustentando a si mesma e seus três filhos como catadora de papéis. Em 1958 tem seu diário publicado sob o nome Quarto de Despejo, com auxílio do jornalista Audálio Dantas. O livro fez um enorme sucesso e chegou a ser traduzido para quatorze línguas.", 
             citacao: "⁠Você nunca deve ter medo do que está fazendo quando está certo.", 
@@ -22,7 +22,7 @@ function carregaDicionario() {
     var content = document.getElementById("dicionario");
   
     for(var bio in biografias){
-        content.innerHTML += '<div class="cards">' + '<img src="' + biografias[bio].imagem + '" alt="Foto de Marielle Franco">' + '<details>' + '<summary>' + biografias[bio].nome + '</summary>' + '<p>' + biografias[bio].descricao + '</p>' + '<blockquote>' + biografias[bio].descricao + '</blockquote>'  + '</details>' + '</div>';     
+        content.innerHTML += '<div class="cards">' + '<img src="' + biografias[bio].imagem + '" alt="Foto de Marielle Franco">' + '<details>' + '<summary>' + biografias[bio].nome + '</summary>' + '<p>' + biografias[bio].descricao + '</p>' + '<blockquote>' + biografias[bio].descricao + '</blockquote>' + '<button type=button id=saiba-mais>Saiba Mais</button>'  + '</details>' + '</div>';     
         console.log((bio += " " + "Nome: " + biografias[bio].nome + "   " + "Minibio: " + biografias[bio].descricao + "     " + "Citação: " + biografias[bio].citacao));
     }
   
